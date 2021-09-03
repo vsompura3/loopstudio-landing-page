@@ -1,1 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+/* Curstom Properties */
+:root {
+	/* Fonts */
+	--FontPrimary: "Alata", Arial, Helvetica, sans-serif;
+	--FontSecondary: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
