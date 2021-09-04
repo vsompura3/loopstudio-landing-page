@@ -26,6 +26,26 @@
 	<body>
 		<!-- Global Wrapper -->
 		<div class="root">
+			<!-- Mobile Navigation -->
+			<div class="mobile-menu">
+				<div class="container">
+					<div class="mobile__head">
+						<div class="mobile__logobox">
+							<img src="./images/logo.svg" alt="Loopstudios" class="mobile__logo" />
+						</div>
+						<div aria-label="Menu-toggle-close" class="mobile__menu" id="menu-close">
+							<img src="./images/icon-close.svg" alt="Menu Icon Close" />
+						</div>
+					</div>
+					<ul class="mobile__list">
+						<li class="mobile__item"><a href="#" class="mobile__link">About</a></li>
+						<li class="mobile__item"><a href="#" class="mobile__link">Careers</a></li>
+						<li class="mobile__item"><a href="#" class="mobile__link">Events</a></li>
+						<li class="mobile__item"><a href="#" class="mobile__link">Products</a></li>
+						<li class="mobile__item"><a href="#" class="mobile__link">Support</a></li>
+					</ul>
+				</div>
+			</div>
 			<!-- Header -->
 			<header>
 				<div class="container">
@@ -34,8 +54,8 @@
 						<div class="navbar__logobox">
 							<img src="./images/logo.svg" alt="Loopstudios" class="navbar__logo" />
 						</div>
-						<div aria-label="Menu" class="navbar__menu">
-							<img src="./images/icon-hamburger.svg" alt="Menu Icon" />
+						<div aria-label="Menu-toggle-open" class="navbar__menu" id="menu-open">
+							<img src="./images/icon-hamburger.svg" alt="Menu Icon Open" />
 						</div>
 						<ul class="navbar__list desktop">
 							<li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
@@ -89,25 +109,32 @@
 								</picture>
 								<h3>Deep Earth</h3>
 							</li>
-
-							<!-- list add later -->
-
+							<li>
+								<picture>
+									<source
+										srcset="./images/desktop/image-night-arcade.jpg"
+										media="(min-width: 650px)"
+									/>
+									<img src="./images/mobile/image-night-arcade.jpg" alt="Night Arcade" />
+								</picture>
+								<h3>Night Arcade</h3>
+							</li>
 							<li>
 								<picture>
 									<source
 										srcset="./images/desktop/image-soccer-team.jpg"
 										media="(min-width: 650px)"
 									/>
-									<img src="./images/mobile/image-soccer-team.jpg" alt="Deep Earth" />
+									<img src="./images/mobile/image-soccer-team.jpg" alt="Soccer Team VR" />
 								</picture>
-								<h3>Deep Earth</h3>
+								<h3>Soccer Span VR</h3>
 							</li>
 							<li>
 								<picture>
 									<source srcset="./images/desktop/image-grid.jpg" media="(min-width: 650px)" />
-									<img src="./images/mobile/image-grid.jpg" alt="Deep Earth" />
+									<img src="./images/mobile/image-grid.jpg" alt="The Grid" />
 								</picture>
-								<h3>Deep Earth</h3>
+								<h3>The Grid</h3>
 							</li>
 							<li>
 								<picture>
@@ -115,9 +142,9 @@
 										srcset="./images/desktop/image-from-above.jpg"
 										media="(min-width: 650px)"
 									/>
-									<img src="./images/mobile/image-from-above.jpg" alt="Deep Earth" />
+									<img src="./images/mobile/image-from-above.jpg" alt="From Up Abouve VR" />
 								</picture>
-								<h3>Deep Earth</h3>
+								<h3>From Up Abouve VR</h3>
 							</li>
 							<li>
 								<picture>
@@ -125,9 +152,9 @@
 										srcset="./images/desktop/image-pocket-borealis.jpg"
 										media="(min-width: 650px)"
 									/>
-									<img src="./images/mobile/image-pocket-borealis.jpg" alt="Deep Earth" />
+									<img src="./images/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis" />
 								</picture>
-								<h3>Deep Earth</h3>
+								<h3>Pocket Borealis</h3>
 							</li>
 							<li>
 								<picture>
@@ -135,16 +162,16 @@
 										srcset="./images/desktop/image-curiosity.jpg"
 										media="(min-width: 650px)"
 									/>
-									<img src="./images/mobile/image-curiosity.jpg" alt="Deep Earth" />
+									<img src="./images/mobile/image-curiosity.jpg" alt="The Curiosity" />
 								</picture>
-								<h3>Deep Earth</h3>
+								<h3>The Curiosity</h3>
 							</li>
 							<li>
 								<picture>
 									<source srcset="./images/desktop/image-fisheye.jpg" media="(min-width: 650px)" />
-									<img src="./images/mobile/image-fisheye.jpg" alt="Deep Earth" />
+									<img src="./images/mobile/image-fisheye.jpg" alt="Make It Fisheye" />
 								</picture>
-								<h3>Deep Earth</h3>
+								<h3>Make It Fisheye</h3>
 							</li>
 						</ul>
 						<div class="text-center">

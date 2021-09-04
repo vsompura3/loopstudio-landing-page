@@ -68,7 +68,7 @@ picture {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 2em;
+	gap: 3em;
 }
 
 .desktop {
@@ -96,6 +96,10 @@ h3 {
 	font-weight: 400;
 	line-height: 1.1;
 	text-transform: uppercase;
+}
+
+p {
+	color: var(--clr-neutral-200);
 }
 
 button {
@@ -150,15 +154,68 @@ h3 {
 }
 
 /** General Layout **/
-.navbar {
+.navbar,
+.mobile__head {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 2em 0;
 }
 
-.navbar__logo {
+.navbar__logo,
+.mobile__logo {
 	max-width: 90%;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+	position: fixed;
+	height: 100%;
+	left: 0;
+	right: 0;
+	background-color: var(--clr-neutral-400);
+	z-index: 99;
+	transform: translateX(-100%) scale(0.85);
+	transition: all 0.4s ease;
+}
+
+.mobile-menu.open {
+	transform: translateX(0) scale(1);
+}
+
+.navbar__link,
+.mobile__link {
+	color: var(--clr-neutral-100);
+	position: relative;
+}
+
+.navbar__link::after,
+.mobile__link::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	left: 0;
+	bottom: -0.25em;
+	background: var(--clr-neutral-100);
+	transition: all 0.4s;
+}
+
+.navbar__link:hover::after,
+.mobile__link:hover::after {
+	width: 100%;
+}
+
+.mobile__list {
+	margin-top: 6em;
+}
+
+.mobile__item {
+	margin: 1.5em 0;
+}
+
+.mobile__link {
+	font-size: 1.5rem;
 }
 
 .hero__content {
@@ -166,7 +223,7 @@ h3 {
 }
 
 main {
-	padding: 3em 0;
+	padding: 3em 0 5em;
 }
 
 section {
@@ -192,11 +249,11 @@ section {
 }
 
 .section-title {
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 }
 
 .gallery {
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 }
 
 .gallery li {
@@ -210,8 +267,13 @@ section {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(to top right, var(--clr-neutral-400), transparent, transparent);
+	background: linear-gradient(to top right, var(--clr-neutral-400), transparent, transparent);
 	z-index: 5;
+	transition: all 0.3s;
+}
+
+.gallery li:hover::after {
+	background: linear-gradient(to top right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65));
 }
 
 .gallery li h3 {
@@ -219,6 +281,10 @@ section {
 	bottom: 0.5em;
 	left: 0.5em;
 	z-index: 9;
+}
+
+.gallery li:hover h3 {
+	color: var(--clr-neutral-400);
 }
 
 .footer__content {
@@ -240,7 +306,7 @@ section {
 	content: "";
 	position: absolute;
 	width: 0;
-	height: 3px;
+	height: 2px;
 	left: 0;
 	bottom: -0.25em;
 	background: var(--clr-neutral-100);
