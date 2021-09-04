@@ -162,9 +162,9 @@ h3 {
 	padding: 2em 0;
 }
 
-.navbar__logo,
-.mobile__logo {
-	max-width: 90%;
+.navbar__logobox,
+.mobile__logobox {
+	width: 200px;
 }
 
 /* Mobile Menu */
@@ -320,6 +320,7 @@ section {
 
 .footer-one img {
 	width: 60%;
+	max-width: 200px;
 	margin: 0 auto 2.5em;
 }
 
@@ -341,4 +342,15 @@ section {
 
 .footer-two p {
 	color: var(--clr-neutral-300);
+}
+
+@media screen and (min-width: 600px) {
+	.hero h1 {
+		padding: 0.5em;
+		padding-right: 3em;
+	}
+
+	.footer__content {
+		padding: 4em 0;
+	}
 }
