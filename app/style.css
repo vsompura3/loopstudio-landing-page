@@ -1,3 +1,4 @@
+/* Google Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
 /** Curstom Properties **/
@@ -43,6 +44,7 @@ a:link {
 button {
 	margin: 0;
 	font: inherit;
+	line-height: 1;
 }
 
 ul[class],
@@ -57,12 +59,25 @@ picture {
 	max-width: 100%;
 }
 
+/** Utilities **/
+.container {
+	max-width: 75em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.desktop {
+	display: none;
+}
+
 /** General Styling **/
 body {
 	font-size: var(--Fs-Default);
 	font-family: var(--Font-Primary);
 	font-weight: 300;
 	line-height: 1.5;
+	color: var(--clr-neutral-400);
+	margin: 0;
 }
 
 h1,
@@ -72,4 +87,49 @@ h3 {
 	font-weight: 400;
 	line-height: 1.1;
 	text-transform: uppercase;
+}
+
+header {
+	background-color: var(--clr-neutral-400);
+	background-image: url("../images/mobile/image-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	color: var(--clr-neutral-100);
+}
+
+footer {
+	background-color: var(--clr-neutral-400);
+	color: var(--clr-neutral-100);
+}
+
+.hero h1 {
+	display: inline-block;
+	font-size: clamp(1.8rem, 12vw, 6rem);
+	border: 1px solid var(--clr-neutral-100);
+	padding: 5%;
+	width: min-content;
+}
+
+.hero span {
+	display: block;
+}
+
+/** General Layout **/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 0;
+}
+
+.navbar__logo {
+	max-width: 90%;
+}
+
+.hero__content {
+	padding: 6em 0 10em;
+}
+
+section {
+	padding: 15% 0; /* vertical padding and margin set in % depends on parents width [15% of parents width] */
 }
