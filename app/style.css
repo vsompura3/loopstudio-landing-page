@@ -162,7 +162,7 @@ h3 {
 }
 
 .hero__content {
-	padding: 6em 0 10em;
+	padding: clamp(3em, 20vw, 6em) 0 10em;
 }
 
 main {
