@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
-/* Curstom Properties */
+/** Curstom Properties **/
 :root {
 	/* Fonts */
-	--FontPrimary: "Alata", Arial, Helvetica, sans-serif;
-	--FontSecondary: "Josefin Sans", Arial, Helvetica, sans-serif;
+	--Font-Primary: "Alata", Arial, Helvetica, sans-serif;
+	--Font-Secondary: "Josefin Sans", Arial, Helvetica, sans-serif;
+	--Fs-Default: 1em;
+
+	/* Colors */
+	--clr-neutral-100: hsl(0, 0%, 100%);
+	--clr-neutral-200: hsl(0, 0%, 55%);
+	--clr-neutral-300: hsl(0, 0%, 41%);
+	--clr-neutral-400: hsl(0, 0%, 0%);
 }
 
-/* Reset */
+/** Reset **/
 *,
 *::before,
 *::after {
@@ -22,6 +29,47 @@ html {
 h1,
 h2,
 h3,
+span,
 p {
 	margin: 0;
+}
+
+a:link {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	margin: 0;
+	font: inherit;
+}
+
+ul[class],
+ol[class] {
+	padding: 0;
+	list-style: none;
+}
+
+img,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+/** General Styling **/
+body {
+	font-size: var(--Fs-Default);
+	font-family: var(--Font-Primary);
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--Font-Secondary);
+	font-weight: 400;
+	line-height: 1.1;
+	text-transform: uppercase;
 }
