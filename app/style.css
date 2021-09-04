@@ -344,10 +344,23 @@ section {
 	color: var(--clr-neutral-300);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
+	.header {
+		background-image: url("../images/desktop/image-hero.jpg");
+	}
+
 	.hero h1 {
 		padding: 0.5em;
 		padding-right: 3em;
+	}
+
+	.navbar__list {
+		display: flex;
+		gap: 2em;
+	}
+
+	.navbar__menu {
+		display: none;
 	}
 
 	.footer__content {
